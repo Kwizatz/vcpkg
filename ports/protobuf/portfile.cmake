@@ -10,6 +10,7 @@ vcpkg_from_github(
         fix-uwp.patch
         disable-lite.patch
         version-rc-msvc.patch
+        fix-iterator.patch
 )
 
 if(CMAKE_HOST_WIN32 AND NOT VCPKG_TARGET_ARCHITECTURE MATCHES "x64" AND NOT VCPKG_TARGET_ARCHITECTURE MATCHES "x86")
